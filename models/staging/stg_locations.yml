@@ -1,0 +1,8 @@
+models:
+  - name: stg_locations
+    description: List of open locations with basic cleaning and transformation applied
+    columns:
+      - name: location_id
+        tests:
+          - not_null
+          - unique
