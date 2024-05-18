@@ -1,0 +1,9 @@
+models:
+  - name: stg_supplies
+    description: List our supply expenses data with basic cleaning and transformation applied
+    columns:
+      - name: supply_uuid
+        description: The unique kaye of our supplies per cost
+        tests:
+          - unique
+          - not_null
