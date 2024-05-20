@@ -3,10 +3,12 @@ models:
     description: Individual food and drink items that make up our orders, one per item
     columns:
       - name: order_item_id
+        description:  The unique key for each order item.
         tests:
           - unique
           - not_null
       - name: order_id
+        description: The corresponding order each order item belongs to 
         tests:
           - not_null
           - relationships:
