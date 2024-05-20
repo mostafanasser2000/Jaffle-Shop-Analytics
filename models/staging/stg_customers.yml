@@ -3,6 +3,7 @@ models:
     description: Customer data with basic cleaning and transformation applied
     columns:
       - name: customer_id
+        description: The Unique key for each customer
         tests:
           - not_null
           - unique

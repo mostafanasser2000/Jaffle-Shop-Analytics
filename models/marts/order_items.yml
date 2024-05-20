@@ -1,0 +1,14 @@
+models:
+  - name: order_itmes
+    columns:
+      - name: order_item_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - relationships:
+              to: ref('orders')
+              field: order_id
+                
+      
